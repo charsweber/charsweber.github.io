@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*1. CSS Reset
+2. Global Styles
+p {
+font-size: 18px;
+line-height: 1.5;
+}
+3. CSS should follow the order of your HTML
+
+maybe use a green color palette
+
+forms on codepen.io
+*/
+
+body {
+	background: #FDFDFB;
+	color: #133A65;
+	font-family: 'Roboto', sans-serif;
+}
+
+body header h1 {
+	margin-top: 1em;
+}
+
+nav {
+	color: #FF8800;
+	padding: .75em;
+	text-align: center;
+}
+
+.navlinks {
+	color: #ff8800;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.heading {
+	text-align: center;
+	padding: 1em 0;
+}
+
+/*
+add a background image to site - overlay h1 (maybe h2) and social links?
+.main-header div {
+	background: url('http://cdn.skim.gs/image/upload/v1456344012/msi/Puppy_2_kbhb4a.jpg');
+}*/
+
+.heading img {
+	width: 35%;
+	padding: 25px 20px;
+	border-radius: 50%;
+}
+
+.header-text {
+	font-size: 3em;
+	font-family: 'Oswald', sans-serif;
+	/*text-transform: lowercase;*/
+}
+
+#slogan {
+	font-size: 1.25em;
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main-content {
+	text-align: center;
+}
+
+.about-me {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.column {
+	width: 25em;
+	margin: 0 auto;
+	padding: .5em 0;
+}
+
+.column img {
+	width: 18.75em;
+	padding: .5em 0;
+}
+
+.project-title {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+footer {
+	background: #133A65;
+	color: #FDFDFB;
+	text-align: center;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+footer a {
+	text-decoration: none;
+	color: #ff8800;
+}
+
+footer a p {
+	text-transform: uppercase;
+}
+
+
+/*133A65 - navy blue
+96D4D3 - lighter blue
+FDFDFB - slightly off white
+FF8800 - orange
+
+challenge: add hero img as background and get h1 text on top of it!;
+A common technique for slightly more advanced users is to add an image using the ** background** property in CSS. 
+This will allow you to have text on top of the image. Try this out if you’re feeling ambitious!
+*/
