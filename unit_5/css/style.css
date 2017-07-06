@@ -7,26 +7,13 @@
 	box-sizing: border-box;
 }
 
-/*1. CSS Reset
-2. Global Styles
-p {
-font-size: 18px;
-line-height: 1.5;
-}
-3. CSS should follow the order of your HTML
-
-maybe use a green color palette
-
-forms on codepen.io
-*/
-
 body {
 	background: #FDFDFB;
 	color: #133A65;
 	font-family: 'Roboto', sans-serif;
 }
 
-body header h1 {
+.heading header h1 {
 	margin-top: 1em;
 }
 
@@ -46,7 +33,7 @@ nav {
 
 .heading {
 	text-align: center;
-	padding: 1em 0 0;
+	padding: 13em 0 17em;
 }
 
 /*
@@ -55,11 +42,7 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 	background: url('http://cdn.skim.gs/image/upload/v1456344012/msi/Puppy_2_kbhb4a.jpg');
 }*/
 
-.heading img {
-	width: 35%;
-	padding: 25px 20px;
-	border-radius: 50%;
-}
+
 
 .header-text {
 	font-size: 3em;
@@ -79,9 +62,9 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 }
 
 .about-me {
-	width: 60%;
 	margin: 0 auto;
 	padding: 1em 0;
+	border-bottom: 1px solid #ccc;
 }
 
 .about-me h3 {
@@ -90,10 +73,33 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 	margin-bottom: .5em;
 }
 
+.about-me aside {
+	display: inline-block;
+	width: 30%;
+}
+
+.about-me article {
+	display: inline-block;
+	width: 50%;
+}
+
+.about-me img {
+	width: 35%;
+	padding: 25px 20px;
+	border-radius: 50%;
+}
+
+/*.about-me p {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}*/
+
 .column {
-	width: 25em;
-	margin: 0 auto;
+	width: 20em;
+	margin: 0 2em;
 	padding: .5em 0;
+	display: inline-block;
+	vertical-align: text-top;
 }
 
 .column img {
@@ -108,11 +114,12 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 }
 
 footer {
-	background: #133A65;
+	/*background: #133A65;*/
 	color: #FDFDFB;
 	text-align: center;
 	padding: 1em;
 	margin-top: 1em;
+	clear: both;
 }
 
 footer a {
@@ -124,13 +131,47 @@ footer a p {
 	text-transform: uppercase;
 }
 
+/*these can all be removed at the end of Unit 6*/
+
+header {
+    background: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+nav {
+    background: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+aside {
+    background: #FFC675;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+article {
+    background: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section {
+    background: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+footer {
+    background: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+
 
 /*133A65 - navy blue
 96D4D3 - lighter blue
 FDFDFB - slightly off white
 FF8800 - orange
-
-challenge: add hero img as background and get h1 text on top of it!;
-A common technique for slightly more advanced users is to add an image using the ** background** property in CSS. 
-This will allow you to have text on top of the image. Try this out if you’re feeling ambitious!
 */
