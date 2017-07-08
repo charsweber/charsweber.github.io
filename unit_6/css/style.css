@@ -69,20 +69,35 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 
 .about-me h3 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 2em;
-	margin-bottom: .5em;
+    font-size: 3em;
+    /* margin-bottom: .5em; */
+    border-bottom: 1px solid #ccc;
+    width: 20%;
+    margin: 0 auto;
 }
 
 .about-me aside {
-	display: inline-block;
-	width: 30%;
+    float: left;
+    width: 30%;
+    margin: 0 0 0 10%;
 }
 
 .about-me article {
-	display: inline-block;
-	width: 55%;
-	vertical-align: top;
-	padding: 8.75em 0;
+    float: right;
+    width: 50%;
+    vertical-align: top;
+    padding: 9% 2%;
+    margin: 0 10% 0 0;
+    font-size: 1.25em;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 .about-me img {
@@ -91,21 +106,21 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 	border-radius: 50%;
 }
 
-/*.about-me p {
-	padding-bottom: 20px;
-	border-bottom: 1px solid #ccc;
-}*/
+.column-wrapper {
+	/*background: #ccc;*/
+	padding: 0 4%;
+}
 
 .column {
-	width: 20em;
-	margin: 0 2em;
+	width: 27%;
+    margin: 0 3%;
 	padding: .5em 0;
-	display: inline-block;
+	float: left;
 	vertical-align: text-top;
 }
 
 .column img {
-	width: 18.75em;
+	width: 95%;
 	padding: .5em 0;
 }
 
@@ -116,7 +131,7 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 }
 
 footer {
-	/*background: #133A65;*/
+	background: #133A65;
 	color: #FDFDFB;
 	text-align: center;
 	padding: 1em;
@@ -131,44 +146,6 @@ footer a {
 
 footer a p {
 	text-transform: uppercase;
-}
-
-/*these can all be removed at the end of Unit 6*/
-
-header {
-    background: #FFED74;
-    border: 1px black solid;
-    padding: 20px;
-}
-
-nav {
-    background: #E8C66A;
-    border: 1px black solid;
-    padding: 20px;
-}
-
-aside {
-    background: #FFC675;
-    border: 1px black solid;
-    padding: 20px;
-}
-
-article {
-    background: #E89C6C;
-    border: 1px black solid;
-    padding: 20px;
-}
-
-section {
-    background: #FFE2B8;
-    border: 1px black solid;
-    padding: 20px;
-}
-
-footer {
-    background: #FF957E;
-    border: 1px black solid;
-    padding: 20px;
 }
 
 
