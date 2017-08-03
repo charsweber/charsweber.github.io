@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #FDFDFB;
+	color: #133A65;
+	font-family: 'Roboto', sans-serif;
+}
+
+.heading header h1 {
+	margin-top: 1em;
+}
+
+nav {
+	color: #FF8800;
+	padding: .75em;
+	text-align: center;
+}
+
+.navlinks {
+	color: #ff8800;
+	border-bottom: 1px solid #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 1em;
+	text-transform: uppercase;
+	-webkit-transition: color .3s ease-in, border-bottom .3s ease-in;
+	-moz-transition: color .3s ease-in, border-bottom .3s ease-in;
+	-o-transition: color .3s ease-in, border-bottom .3s ease-in;
+	transition: color .3s ease-in, border-bottom .3s ease-in;
+}
+
+.navlinks:hover {
+	color: #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.heading {
+	text-align: center;
+	padding: 16% 0 20%;
+}
+
+.social-links li {
+	display: inline;
+}
+
+/*
+add a background image to site - overlay h1 (maybe h2) and social links?
+.main-header div {
+	background: url('http://cdn.skim.gs/image/upload/v1456344012/msi/Puppy_2_kbhb4a.jpg');
+}*/
+
+
+
+.header-text {
+	font-size: 3em;
+	font-family: 'Oswald', sans-serif;
+}
+
+#slogan {
+	font-size: 1.25em;
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main-content {
+	text-align: center;
+}
+
+.about-me {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 1em 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.about-me h3, #portfolio h3 {
+	font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    border-bottom: 1px solid #ccc;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.about-me aside {
+    float: left;
+    width: 35%;
+}
+
+.about-me article {
+    float: right;
+    width: 65%;
+    vertical-align: top;
+    padding: 11% 0;
+    font-size: 1.25em;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.about-me img {
+	width: 70%;
+	padding: 25px 0px;
+	border-radius: 50%;
+}
+
+.column-wrapper {
+	padding: 0 4%;
+}
+
+.column {
+	width: 27%;
+    margin: 0 3%;
+	padding: .5em 0;
+	float: left;
+	vertical-align: text-top;
+}
+
+.column img {
+	width: 95%;
+	padding: .5em 0;
+}
+
+.project-title {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+footer {
+	background: #133A65;
+	color: #FDFDFB;
+	/*text-align: center;*/
+	padding: 1em;
+	margin-top: 1em;
+	clear: both;
+}
+
+footer h3 {
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: #ff8800;
+	transition: color .3s ease-in;
+}
+
+footer a:hover {
+	color: #ccc;
+}
+
+footer a p {
+	text-transform: uppercase;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.contact {
+	width: 40%;
+	margin: 0 auto;
+	/*background-color: #ccc;*/
+}
+
+input[type=text], input[type=email], textarea, select {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ff8800;
+	margin: 5px 0;
+}
+
+input[type=submit] {
+	width: 40%;
+}
+
+.submit {
+	text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+	.about-me h3 {
+		width: 40%;
+	}
+	.about-me article {
+		margin: 0 2em 0 0;
+		width: 59%;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.heading {
+		padding: 5em 0 5em;
+	}
+	.about-me aside {
+		float: none;
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.about-me article {
+		float: none;
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		padding: 0 0 1em;
+	}
+	.column {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+	.column p {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.header-text {
+		font-size: 2.25em;
+	}
+	#slogan {
+		font-size: 1em;
+	}
+	.heading {
+		padding: 2em 0 2em;
+	}
+	.navlinks {
+		display: block;
+	}
+	.about-me h3 {
+		width: 70%;
+	}
+}
