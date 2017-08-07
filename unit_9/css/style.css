@@ -200,11 +200,31 @@ footer a p {
 	width: 40%;
 	margin: 0 auto;
 	background-color: #133a65;
+	color: #fff;
 }
 
-/*.contact-page {
+.contact h3{
+	text-align: center;
+}
 
-}*/
+.contact-us-page {
+	max-width: 960px;
+	margin: 8% auto;
+}
+
+.contact-form {
+	padding: 20px;
+	float: left;
+	width: 45%;
+}
+
+.contact-right {
+	float: right;
+    width: 50%;
+    font-size: 1.7em;
+    padding: 14% 0;
+    text-align: center;
+}
 
 input[type=text], input[type=email], textarea, select {
 	width: 100%;
@@ -221,8 +241,6 @@ input[type=submit] {
 .submit {
 	text-align: center;
 }
-
-.fa 
 
 @media only screen and (max-width: 950px) {
 	.about-me h3 {
