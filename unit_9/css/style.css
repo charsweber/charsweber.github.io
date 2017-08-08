@@ -68,14 +68,6 @@ nav a:hover {
 	color: #ccc;
 }
 
-/*
-add a background image to site - overlay h1 (maybe h2) and social links?
-.main-header div {
-	background: url('http://cdn.skim.gs/image/upload/v1456344012/msi/Puppy_2_kbhb4a.jpg');
-}*/
-
-
-
 .heading h1 {
 	font-size: 3em;
 	font-family: 'Oswald', sans-serif;
@@ -92,7 +84,7 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 	text-align: center;
 }
 
-.about-me {
+#about {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 1em 0;
@@ -100,19 +92,19 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 	border-top: 1px solid #ccc;
 }
 
-.about-me h3, #portfolio h3 {
+#about h3, #portfolio h3 {
 	font-family: 'Oswald', sans-serif;
     font-size: 3em;
     width: 20%;
     margin: 0 auto;
 }
 
-.about-me aside {
+#about aside {
     float: left;
     width: 35%;
 }
 
-.about-me article {
+#about article {
     float: right;
     width: 65%;
     vertical-align: top;
@@ -129,17 +121,17 @@ add a background image to site - overlay h1 (maybe h2) and social links?
     height: 0;
 }
 
-.about-me img {
+#about img {
 	width: 70%;
 	padding: 25px 0px;
 	border-radius: 50%;
 }
 
-.column-wrapper {
+#portfolio {
 	padding: 0 4%;
 }
 
-.column-wrapper section {
+#portfolio section {
 	width: 27%;
     margin: 0 3%;
 	padding: 1.5em 0;
@@ -147,9 +139,12 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 	vertical-align: text-top;
 }
 
-.column-wrapper section img {
+#portfolio section img {
 	width: 95%;
 	padding: .5em 0;
+}
+
+#portfolio section a {	
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	-moz-transition: .3s ease-in-out;
@@ -157,11 +152,11 @@ add a background image to site - overlay h1 (maybe h2) and social links?
 	transition: .3s ease-in-out;
 }
 
-.column-wrapper section img:hover {
+#portfolio section a:hover {
 	opacity: .5;
 }
 
-.column-wrapper section h4 {
+#portfolio section h4 {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.5em;
@@ -209,7 +204,12 @@ footer a p {
 
 .contact-us-page {
 	max-width: 960px;
-	margin: 8% auto;
+	margin: 4% auto;
+}
+
+.contact-header h1 {
+	text-align: center;
+	margin: 3% 0;
 }
 
 .contact-form {
@@ -221,8 +221,8 @@ footer a p {
 .contact-right {
 	float: right;
     width: 50%;
-    font-size: 1.7em;
-    padding: 14% 0;
+    font-size: 1.5em;
+    padding: 10% 0;
     text-align: center;
 }
 
@@ -243,12 +243,31 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 950px) {
-	.about-me h3 {
+	#about h3 {
 		width: 40%;
 	}
-	.about-me article {
+	#about article {
 		margin: 0 2em 0 0;
 		width: 59%;
+	}
+	.contact-form, .contact-right {
+		float: none;
+		display: block;
+		width: 60%;
+	}
+
+	.contact-right {
+		margin: 0 auto;
+	}
+
+	#portfolio section {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+	#portfolio section p {
+		display: none;
 	}
 }
 
@@ -256,27 +275,18 @@ input[type=submit] {
 	.heading {
 		padding: 5em 0 5em;
 	}
-	.about-me aside {
+	#about aside {
 		float: none;
 		display: block;
 		width: 80%;
 		margin: 0 auto;
 	}
-	.about-me article {
+	#about article {
 		float: none;
 		display: block;
 		width: 90%;
 		margin: 0 auto;
 		padding: 0 0 1em;
-	}
-	.column {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		width: 50%;
-	}
-	.column p {
-		display: none;
 	}
 }
 
@@ -293,8 +303,14 @@ input[type=submit] {
 	nav a {
 		display: block;
 	}
-	.about-me h3 {
+	#about h3 {
 		width: 70%;
+	}
+	.contact {
+		width: 80%;
+	}
+	#portfolio h3 {
+		width: 100%;
 	}
 }
 
