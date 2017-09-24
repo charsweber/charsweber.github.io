@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.right {
+	float: right;
+	width: 60%;
+	/*text-align: center;
+	padding: 20px;*/
+}
+
+nav {
+	text-align: center;
+	margin: 3% 0;
+}
+
+nav a {
+	padding: 5%;
+	text-decoration: none;
+	color: #000;
+	vertical-align: middle;
+}
+
+.left {
+	float: left;
+	width: 40%;
+}
+
+.portfolio {
+	text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+section {
+    display: inline-block;
+    background-color: #ccc;
+    width: 29%;
+    margin: 2%;
+    height: 200px;
+}
+
